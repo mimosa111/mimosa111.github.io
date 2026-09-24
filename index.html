@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品集文章阅读站</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true">
+      <span id="readingProgress"></span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="作品集首页">
+        <span class="brand-mark">文</span>
+        <span>
+          <strong>作品集</strong>
+          <small>Article Portfolio</small>
+        </span>
+      </a>
+      <nav class="top-nav" id="topNav" aria-label="文章导航"></nav>
+    </header>
+
+    <main class="layout" id="top">
+      <aside class="sidebar" aria-label="文章列表">
+        <section class="intro">
+          <p class="eyebrow">Selected Writing</p>
+          <h1>文章作品集</h1>
+          <p>三篇稿件已整理为可检索、可切换、适合长文阅读的网页。</p>
+        </section>
+
+        <label class="search">
+          <span>搜索文章</span>
+          <input id="searchInput" type="search" placeholder="输入标题或正文关键词" autocomplete="off" />
+        </label>
+
+        <div class="article-list" id="articleList"></div>
+      </aside>
+
+      <article class="reader" id="reader" tabindex="-1"></article>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
